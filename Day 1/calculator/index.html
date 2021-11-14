@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container w-50 mt-5" style="border: 1px solid black; padding: 10px">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center" style="background: lime; padding: 4px">Simple JS Calculator</h1>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-12 mb-5">
+              <input class="form-control mb-2" name="num_1" placeholder="Enter Number 1" />
+              <input class="form-control mb-2" name="num_2" placeholder="Enter Number 2" />
+              <input class="form-control" disabled=true style="cursor: not-allowed;" name="result" placeholder="Result: 0" />  
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-outline-primary mb-5" id="add">Add</button>
+                <button class="btn btn-outline-secondary mb-5" id="sub">Subtract</button>
+                <button class="btn btn-outline-warning mb-5" id="mul">Multiply</button>
+                <button class="btn btn-outline-success mb-5" id="div">Divide</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
