@@ -47,7 +47,7 @@ export default class App extends Component {
 
   onTextChange = (e) => {
     const input = e.target.value
-    if (input.length >= 5) {
+    if (input.length >= 2) {
       this.getRegionData(input);
     }
   }
@@ -67,13 +67,11 @@ export default class App extends Component {
             <div className='col-md-2'>
               <Button variant='outline-success'>Pick city</Button>
             </div>
-            <div className='col-md-12 mb-2'>
-              <small>Search Results will be shown here</small>
+            <div className='col-md-12 mb-2 mt-2'>
               {
-                dummy?.map(element => {
-                  // console.log(element)
-                  (<h2>Result: {element}</h2>)
-                })
+                (regionData?.length === 0)
+                ? (<small>Search Results will be shown here</small>)
+                : (<small>Showing Results for: {regionData[0]["EnglishName"]} - Key: {regionData[0]["Key"]}</small>)
               }
             </div>
           </div>
